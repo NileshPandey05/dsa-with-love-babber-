@@ -72,4 +72,18 @@ int main(){
         }
         cout<<endl;
     }
+    // binary pattern
+    for(int a=0;a<6;a++){
+        for(int b=0;b<a+1;b++){
+            if(a%3==1){
+                cout<<"1 ";
+            }
+            else{
+                if(a%2==0){
+                    cout<<"0 ";
+                }
+            }
+        }
+        cout<<endl;
+    }
 }
