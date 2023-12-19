@@ -35,7 +35,9 @@ int main(){
     // }
     // cout<<"You ans is:"<<ans<<endl;
     // return 0;
+    
     // Typecasting
+
     //Implicit Casting
     //1. int to float
     // int num1=10;
