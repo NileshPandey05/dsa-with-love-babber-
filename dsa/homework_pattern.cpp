@@ -114,18 +114,37 @@ int main(){
 //     }
 //     cout<<endl;
 //  }
- for(row=0;row<n;row++){
-    for(col=0;col<(n-row-1);col++){
-        cout <<" ";
-    }
-    for(col=0;col<(row+1);col++){
-        if(col==0||col==row+1-1)
-        {
-            cout << "* ";
-        }else{
-            cout << "  ";
-        }
-    }
-    cout<<endl;
-}
+//  for(row=0;row<n;row++){
+//     for(col=0;col<(n-row-1);col++){
+//         cout <<" ";
+//     }
+//     for(col=0;col<(row+1);col++){
+//         if(col==0||col==row+1-1)
+//         {
+//             cout << "* ";
+//         }else{
+//             cout << "  ";
+//         }
+//     }
+//     cout<<endl;
+// }
+
+    // hollow full pyramid
+  for (int row = 0; row < 5; row++) {
+      // Print spaces before the first asterisk
+      for (int col = 0; col < 5 - row - 1; col++) {
+          cout << "  ";
+      }
+
+      // Print asterisks and spaces between them
+      for (int col = 0; col < 2 * (row + 1) - 1; col++) {
+          if (col == 0 || col == 2 * (row + 1) - 2||row==5-1) {
+              cout << "* ";
+          } else {
+              cout << "  ";
+          }
+      }
+
+      cout << endl;
+  }
 }
