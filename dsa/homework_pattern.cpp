@@ -114,22 +114,22 @@ int main(){
 //     }
 //     cout<<endl;
 //  }
-    //hollow full pyramid
-    // for(int row=0;row<5;row++){
-    //     for(int col=0;col<5-row-1;col++){
-    //         cout<<"  ";
-    //     }
-    //     for(int col=0;<(2*(row+1));col++){
-    //         if(row==0||row==5-1||col==0||col==5-1){
-    //             cout<<"* ";
-    //         }else{
-    //             cout<<" ";
-    //         }
-    //     }
-    //     cout<<endl;
-    // }
+ for(row=0;row<n;row++){
+    for(col=0;col<(n-row-1);col++){
+        cout <<" ";
+    }
+    for(col=0;col<(row+1);col++){
+        if(col==0||col==row+1-1)
+        {
+            cout << "* ";
+        }else{
+            cout << "  ";
+        }
+    }
+    cout<<endl;
+}
     // solid half diamond
-    int n;
+     int n;
     cin>>n;
     for(int row=0;row<n;row++){
         for(int col=0;col<(row+1);col++){
@@ -149,4 +149,5 @@ int main(){
         }
         cout<<endl;
     }
+
 }
