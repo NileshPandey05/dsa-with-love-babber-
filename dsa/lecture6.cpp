@@ -27,8 +27,8 @@ using namespace std;
 //  }
  // Q2 Find max of 3 number 
 //  void findMaxValue(int x,int y,int z){
-//     if(x>y){
-//         if(x>z){
+//     if(x>=y){
+//         if(x>=z){
 //             cout<<x<<endl;
 //         }
 //         else{

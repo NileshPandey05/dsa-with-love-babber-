@@ -114,18 +114,5 @@ int main(){
 //     }
 //     cout<<endl;
 //  }
- for(row=0;row<n;row++){
-    for(col=0;col<(n-row-1);col++){
-        cout <<" ";
-    }
-    for(col=0;col<(row+1);col++){
-        if(col==0||col==row+1-1)
-        {
-            cout << "* ";
-        }else{
-            cout << "  ";
-        }
-    }
-    cout<<endl;
-}
+    //hollow full pyrami
 }
