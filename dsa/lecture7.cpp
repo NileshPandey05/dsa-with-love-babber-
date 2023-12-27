@@ -149,4 +149,41 @@ int main(){
     for(int i=0;i<size;i++){
         cout << arr[i] <<endl;
     }
+
+    // Vector 
+    //syntax vector<int> arr(10,20,30)
+    // #include<vector>
+    
+    vector<int> arr;
+    // int ans = (sizeof(arr)/sizeof(int));
+    // cout << ans << endl;
+    cout << arr.size() << endl;
+    cout << arr.capacity() << endl; 
+
+    //to insert element in array
+    arr.push_back(5);
+    arr.push_back(6);
+     
+    //print
+    for(int i=0;i<arr.size();i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    //to remove element array
+    arr.pop_back();
+    for(int i=0;i<arr.size();i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    //if we declear the size of array 
+    vector<int> brr(10);
+    cout << "size of brr is" << brr.size() << endl; //output is 10
+    cout << "Capacity of brr is" << brr.capacity() << endl; //output is 10
+
+    for(int i=0;i<brr.size();i++){
+        cout << brr[i] << " "; // output is 10 times 0's
+    }
+    cout << endl;
 }
