@@ -186,4 +186,5 @@ int main(){
         cout << brr[i] << " "; // output is 10 times 0's
     }
     cout << endl;
+    //vector
 }
