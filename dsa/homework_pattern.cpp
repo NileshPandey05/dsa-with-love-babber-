@@ -114,40 +114,68 @@ int main(){
 //     }
 //     cout<<endl;
 //  }
- for(row=0;row<n;row++){
-    for(col=0;col<(n-row-1);col++){
-        cout <<" ";
-    }
-    for(col=0;col<(row+1);col++){
-        if(col==0||col==row+1-1)
-        {
-            cout << "* ";
-        }else{
-            cout << "  ";
-        }
+//  for(row=0;row<n;row++){
+//     for(col=0;col<(n-row-1);col++){
+//         cout <<" ";
+//     }
+//     for(col=0;col<(row+1);col++){
+//         if(col==0||col==row+1-1)
+//         {
+//             cout << "* ";
+//         }else{
+//             cout << "  ";
+//         }
+//     }
+//     cout<<endl;
+// }
+//     // solid half diamond
+//      int n;
+//     cin>>n;
+//     for(int row=0;row<n;row++){
+//         for(int col=0;col<(row+1);col++){
+//             cout<<"* ";
+//         }
+//         for(int col=0;col<(n-row-1);col++){
+//             cout<<"  ";
+//         }
+//         cout<<endl;
+//     }
+//     for(int row=0;row<n;row++){
+//         for(int col=0;col<(n-row-1);col++){
+//             cout<<"* ";
+//         }
+//         for(int col=0;col<(row+1);col++){
+//             cout<<"  ";
+//         }
+//         cout<<endl;
+//     }
+
+    // numbers half pyramid
+  // for(int row=1;row<=5;row++){
+  //   for(int col=1;col<row+1;col++){
+  //     cout<<col;
+  //   }
+  //   cout<<endl;
+  // }
+
+  // inverted half number pyramid 
+  // for(int row=1;row<=5;row++){
+  //   for(int col=1;col<=5-row+1;col++){
+  //     cout<<col;
+  //   }
+  //   cout<<endl;
+  // }
+
+  //hollow half number pyramid
+  for(int row=1;row<=5;row++){
+    for(int col=1;col<row+1;col++){
+      if(col==1||row==5||col==row){
+        cout<<col<<" ";
+      }else{
+        cout<<"  ";
+      }
     }
     cout<<endl;
-}
-    // solid half diamond
-     int n;
-    cin>>n;
-    for(int row=0;row<n;row++){
-        for(int col=0;col<(row+1);col++){
-            cout<<"* ";
-        }
-        for(int col=0;col<(n-row-1);col++){
-            cout<<"  ";
-        }
-        cout<<endl;
-    }
-    for(int row=0;row<n;row++){
-        for(int col=0;col<(n-row-1);col++){
-            cout<<"* ";
-        }
-        for(int col=0;col<(row+1);col++){
-            cout<<"  ";
-        }
-        cout<<endl;
-    }
+  }
 
 }
