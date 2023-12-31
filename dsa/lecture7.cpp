@@ -1,5 +1,6 @@
 #include<iostream>
-#include<limit.h>
+// #include<limit.h>
+#include<vector>
 using namespace std;
 int main(){
     // We learn about Array
@@ -133,58 +134,75 @@ int main(){
     //     cout << arr[i] << " ";
     // }
 
-    // Reverse an array by using three variable
-     int arr[8]={1,2,3,4,5,6,7,8};
-    int size =8;
+    // // Reverse an array by using three variable
+    //  int arr[8]={1,2,3,4,5,6,7,8};
+    // int size =8;
     
-    int start=0;
-    int end = size-1;
-    while(start<end){
-        int temp=arr[end];
-        arr[end]=arr[start];
-        arr[start]=temp;
-        start++;
-        end--;
-    }
-    for(int i=0;i<size;i++){
-        cout << arr[i] <<endl;
-    }
+    // int start=0;
+    // int end = size-1;
+    // while(start<end){
+    //     int temp=arr[end];
+    //     arr[end]=arr[start];
+    //     arr[start]=temp;
+    //     start++;
+    //     end--;
+    // }
+    // for(int i=0;i<size;i++){
+    //     cout << arr[i] <<endl;
+    // }
 
     // Vector 
     //syntax vector<int> arr(10,20,30)
     // #include<vector>
     
     vector<int> arr;
-    // int ans = (sizeof(arr)/sizeof(int));
-    // cout << ans << endl;
-    cout << arr.size() << endl;
-    cout << arr.capacity() << endl; 
 
-    //to insert element in array
+    // int ans=(sizeof(arr)/sizeof(int));
+    // cout<<ans<<endl;
+
+    cout<<arr.size()<<endl;
+    cout<<arr.capacity()<<endl;
+
+    //insert
     arr.push_back(5);
     arr.push_back(6);
-     
-    //print
-    for(int i=0;i<arr.size();i++){
+    for (int i = 0; i < arr.size(); i++)
+    {
         cout << arr[i] << " ";
     }
-    cout << endl;
-
-    //to remove element array
+    cout<<endl;
+    
+    //delete
     arr.pop_back();
-    for(int i=0;i<arr.size();i++){
+    for (int i = 0; i < arr.size(); i++)
+    {
         cout << arr[i] << " ";
     }
-    cout << endl;
+    cout<<endl;
 
-    //if we declear the size of array 
-    vector<int> brr(10);
-    cout << "size of brr is" << brr.size() << endl; //output is 10
-    cout << "Capacity of brr is" << brr.capacity() << endl; //output is 10
-
-    for(int i=0;i<brr.size();i++){
-        cout << brr[i] << " "; // output is 10 times 0's
+    int n;
+    cout << "Enter the value of n " << endl;
+    cin >> n;
+    vector<int> brr(n,90);
+    cout << "Size of brr " << brr.size() <<endl;
+    cout << "Capacity of brr " << brr.capacity() <<endl;
+    for (int i = 0; i < brr.size(); i++)
+    {
+        cout << brr[i] << " ";
     }
-    cout << endl;
-    //vector
+    cout<<endl;
+
+    vector<int> crr{40,50,46,70};
+    for (int i = 0; i < crr.size(); i++)
+    {
+        cout << crr[i] << " ";
+    }
+    cout<<endl;
+
+    cout << "Vector crr is empty or not " << crr.empty() <<endl;
+    
+    vector<int> drr;
+    cout << "Vector crr is empty or not " << drr.empty() <<endl;
+
+    return 0;
 }
