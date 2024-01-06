@@ -202,8 +202,8 @@ int main(){
     cout << "Vector crr is empty or not " << crr.empty() <<endl;
     
     vector<int> drr;
-    cout << "Vector crr is empty or not " << drr.empty() <<endl;
+    cout << "Vector drr is empty or not " << drr.empty() <<endl;
 
     return 0;
-    // vector
+    //vector
 }
