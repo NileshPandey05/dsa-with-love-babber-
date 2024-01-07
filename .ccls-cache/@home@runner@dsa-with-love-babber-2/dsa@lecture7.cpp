@@ -160,50 +160,69 @@ int main(){
     // int ans=(sizeof(arr)/sizeof(int));
     // cout<<ans<<endl;
 
-    cout<<arr.size()<<endl;
-    cout<<arr.capacity()<<endl;
+    // cout<<arr.size()<<endl;
+    // cout<<arr.capacity()<<endl;
 
-    //insert
-    arr.push_back(5);
-    arr.push_back(6);
-    for (int i = 0; i < arr.size(); i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout<<endl;
+    // //insert
+    // arr.push_back(5);
+    // arr.push_back(6);
+    // for (int i = 0; i < arr.size(); i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+    // cout<<endl;
     
-    //delete
-    arr.pop_back();
-    for (int i = 0; i < arr.size(); i++)
-    {
-        cout << arr[i] << " ";
-    }
-    cout<<endl;
+    // //delete
+    // arr.pop_back();
+    // for (int i = 0; i < arr.size(); i++)
+    // {
+    //     cout << arr[i] << " ";
+    // }
+    // cout<<endl;
 
-    int n;
-    cout << "Enter the value of n " << endl;
-    cin >> n;
-    vector<int> brr(n,90);
-    cout << "Size of brr " << brr.size() <<endl;
-    cout << "Capacity of brr " << brr.capacity() <<endl;
-    for (int i = 0; i < brr.size(); i++)
-    {
-        cout << brr[i] << " ";
-    }
-    cout<<endl;
+    // int n;
+    // cout << "Enter the value of n " << endl;
+    // cin >> n;
+    // vector<int> brr(n,90);
+    // cout << "Size of brr " << brr.size() <<endl;
+    // cout << "Capacity of brr " << brr.capacity() <<endl;
+    // for (int i = 0; i < brr.size(); i++)
+    // {
+    //     cout << brr[i] << " ";
+    // }
+    // cout<<endl;
 
-    vector<int> crr{40,50,46,70};
-    for (int i = 0; i < crr.size(); i++)
-    {
-        cout << crr[i] << " ";
-    }
-    cout<<endl;
+    // vector<int> crr{40,50,46,70};
+    // for (int i = 0; i < crr.size(); i++)
+    // {
+    //     cout << crr[i] << " ";
+    // }
+    // cout<<endl;
 
-    cout << "Vector crr is empty or not " << crr.empty() <<endl;
+    // cout << "Vector crr is empty or not " << crr.empty() <<endl;
     
-    vector<int> drr;
-    cout << "Vector drr is empty or not " << drr.empty() <<endl;
+    // vector<int> drr;
+    // cout << "Vector drr is empty or not " << drr.empty() <<endl;
 
-    return 0;
-    //vectore is dynamic array
+    
+
+  
+    //q1 find unique element(every element occur once expect one)
+
+  
+  
+  int n;
+  cout<< "Enter the size of array" << endl;
+  vector<int> brr(n);
+  cout << "Enter the elements" << endl;
+  // taking input
+  for(int i=0;i<brr.size();i++){
+    cin >> brr[i];
+  }
+
+  int uniqueElement = findUnique(brr);
+
+  cout << "Unique Element is " << uniqueElement << endl;
+  return 0;
+  
 }
